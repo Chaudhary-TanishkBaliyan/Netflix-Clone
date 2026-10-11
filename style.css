@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
-
-:root {
-    --accent: #ff3b5c;
-    --accent-2: #ff8a3d;
-    --text-soft: #b3b3b3;
-}
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
 * {
     padding: 0;
@@ -13,7 +7,7 @@
 }
 
 body {
-    background-color: #0b0b0f;
+    background-color: black;
 }
 
 .main {
@@ -28,12 +22,10 @@ body {
 .main .box {
     height: 644px;
     width: 100%;
+    opacity: 0.69;
     position: absolute;
     top: 0;
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.85),
-            rgba(0, 0, 0, 0.55) 50%,
-            rgba(11, 11, 15, 0.95));
+    background-color: black;
 }
 
 nav {
@@ -46,6 +38,7 @@ nav {
 }
 
 nav img {
+    color: red;
     width: 130px;
     position: relative;
     z-index: 10;
@@ -70,11 +63,10 @@ nav button {
 }
 
 .hero> :nth-child(1) {
-    font-family: 'Baloo 2', sans-serif;
-    font-weight: 800;
-    font-size: 52px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
     text-align: center;
-    line-height: 1.15;
 }
 
 .hero> :nth-child(2) {
@@ -90,40 +82,35 @@ nav button {
 }
 
 .separation {
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    height: 7px;
+    background-color: rgb(46, 44, 44);
     position: relative;
     z-index: 20;
-    opacity: 0.8;
 }
 
-/* buttons */
 .btn {
-    padding: 5px 14px;
+    padding: 3px 8px;
     font-weight: 400;
     color: white;
-    background-color: rgba(255, 255, 255, 0.06);
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
     cursor: pointer;
-    transition: transform 0.2s ease;
-}
 
-.btn:hover {
-    transform: scale(1.05);
 }
 
 .btn-red {
-    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    background-color: red;
     color: white;
-    padding: 6px 28px;
+    padding: 3px 24px;
     font-size: 20px;
-    border: none;
+    border-radius: 4px;
+    font-weight: 400;
 }
 
 .btn-red-sm {
-    background: var(--accent);
-    border-color: var(--accent);
+    background-color: red;
+    color: white;
 }
 
 .hero-buttons {
@@ -134,28 +121,25 @@ nav button {
 }
 
 .main input {
-    padding: 9px 101px 10px 18px;
+    padding: 7px 101px 8px 14px;
     color: white;
-    font-size: 13px;
-    border-radius: 999px;
+    font-size: 12px;
+    border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(246, 238, 238, 0.5);
-    outline: none;
 }
 
-.main input:focus {
-    border-color: var(--accent);
-}
-
-/* feature sections */
 .first {
     display: flex;
     justify-content: center;
     max-width: 70vw;
     margin: auto;
     color: white;
+    justify-content: center;
     align-items: center;
 }
+
+
 
 .secImg {
     position: relative;
@@ -181,79 +165,31 @@ section.first>div {
 }
 
 section.first>div :nth-child(1) {
-    font-family: 'Baloo 2', sans-serif;
     font-size: 48px;
-    font-weight: 800;
-    line-height: 1.15;
-    margin-bottom: 10px;
+    font-weight: bolder;
 }
+
 
 section.first>div :nth-child(2) {
     font-size: 24px;
-    color: #e6e6e6;
+
 }
 
-/* trending row */
-.picks {
-    max-width: 70vw;
-    margin: auto;
-    padding: 40px 0;
-    color: white;
-}
 
-.picks h2 {
-    font-family: 'Baloo 2', sans-serif;
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-
-.row {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    padding-bottom: 12px;
-}
-
-.poster {
-    flex: 0 0 180px;
-}
-
-.poster img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 2 / 3;
-    object-fit: cover;
-    border-radius: 10px;
-    background-color: #24242c;
-    transition: transform 0.3s ease;
-}
-
-.poster img:hover {
-    transform: scale(1.06);
-}
-
-.poster span {
-    display: block;
-    margin-top: 8px;
-    font-size: 14px;
-    color: var(--text-soft);
-}
-
-/* faq */
 .faq h2 {
-    font-family: 'Baloo 2', sans-serif;
     text-align: center;
     font-size: 48px;
 }
 
 .faq {
+    background: black;
     color: white;
     padding: 34px;
 }
 
 .faqbox:hover {
-    background-color: #3a3a46;
-    border-left-color: var(--accent);
+    background-color: #414141;
+    color: white;
 }
 
 .faqbox svg {
@@ -261,20 +197,17 @@ section.first>div :nth-child(2) {
 }
 
 .faqbox {
-    transition: all 0.4s ease-out;
+    transition: all 1s ease-out;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
-    background-color: #24242c;
+    background-color: #2d2d2d;
     padding: 24px;
     max-width: 60vw;
-    margin: 20px auto;
+    margin: 34px auto;
     cursor: pointer;
-    border-radius: 14px;
-    border-left: 6px solid transparent;
 }
 
-/* footer */
 footer {
     color: white;
     max-width: 60vw;
@@ -286,32 +219,18 @@ footer .questions {
     padding: 34px 0;
 }
 
+
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.footer a {
-    font-size: 14px;
-    color: var(--text-soft);
-    text-decoration: none;
-}
-
-.footer a:hover {
     color: white;
-    text-decoration: underline;
 }
 
-.footer-item {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
-}
 
-/* smaller screens */
+
 @media screen and (max-width: 1300px) {
 
-    nav {
+    nav{
         max-width: 90vw;
     }
 
@@ -340,20 +259,16 @@ footer .questions {
     }
 
     .hero-buttons {
+        display: flex;
         flex-direction: column;
-    }
-
-    .picks {
-        max-width: 90vw;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
     }
 
     .faq h2 {
+        text-align: center;
         font-size: 32px;
-    }
-
-    .faqbox {
-        max-width: 90vw;
-        font-size: 18px;
     }
 
     footer {
@@ -361,12 +276,32 @@ footer .questions {
         padding: 75px 0;
     }
 
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
     .footer {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 25px;
     }
+}
 
-    .footer-item {
-        align-items: center;
-    }
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
